@@ -33,3 +33,22 @@ merge
 合并就是将外部的提交合并到自己的分支中
 
 ```
+
+# clone远程仓库非master分支
+
+- 解决方法
+
+```sh
+
+#直接使用命令
+#查看远程分支
+$ git branch -r 
+
+
+#查看所有分支
+$ git branch -a 
+
+#然后直接 其中* * 代表分支名
+$ git checkout origin/*/*
+
+```
