@@ -16,6 +16,8 @@ $ git merge --no-ff branchName
 
 ```
 
+- 日志查看
+```sh
 log
 显示这个版本库的所有提交
 
@@ -29,3 +31,5 @@ $ git log -n 10
 $ git log --merges
 merge
 合并就是将外部的提交合并到自己的分支中
+
+```
