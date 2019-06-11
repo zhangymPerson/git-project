@@ -52,14 +52,38 @@
 
 ## 标签
 
-为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：
-    git tag 1.0.0 1b2e1d63ff
+- 为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：
+
+        git tag 1.0.0 1b2e1d63ff
 
     1b2e1d63ff 是你想要标记的提交 ID 的前 10 位字符。可以使用下列命令获取提交 ID：
 
-    git log
+        git log
 
     你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性
+
+- 默认情况下，git push并不会把tag标签传送到远端服务器上，只有通过显式命令才能分享标签到远端仓库。
+
+-  push单个tag，
+    命令格式为：
+    
+        git push origin [tagname]
+
+    例如：
+
+        #将本地v1.0的tag推送到远端服务器
+        git push origin v1.0 
+
+- push所有tag，命令格式为：
+
+      git push [origin] --tags
+
+    例如：
+
+        git push --tags
+    或
+
+        git push origin --tags
 
 ## 提取远程仓库代码
 
