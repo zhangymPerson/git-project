@@ -72,6 +72,7 @@ $ git checkout origin/*/*
 
 ### 已有本地仓库推送到线上的仓库
 
+- 提交命令
     git remote add {gitname} {address}
 
     eg: git remote add gitee git@gitee.com:ZhangYanMingGood/git-project.git
