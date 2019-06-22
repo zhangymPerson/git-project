@@ -52,3 +52,34 @@ $ git branch -a
 $ git checkout origin/*/*
 
 ```
+
+
+### git 多远程仓库的配置 推送
+
+- 注意
+
+    git clone {address} 和 git remote add gitName {address}
+
+    这两种 命令 如果 address是以 https开头的参数
+    如:https://gitee.com/ZhangYanMingGood/git-project.git
+    则需要使用用户名和密码才能推送和拉取
+
+    如果address是以 git@***.com
+    如:git@gitee.com:ZhangYanMingGood/git-project.git
+    则需要使用ssh密钥 进行推送和拉取
+
+    修改删除密码在 windows 下 windows凭据 里面进行操作  看对应仓库对应的数据
+
+### 已有本地仓库推送到线上的仓库
+
+    git remote add {gitname} {address}
+
+    eg: git remote add gitee git@gitee.com:ZhangYanMingGood/git-project.git
+    
+    在本地仓库执行以上命令 就是添加一个远程仓库到本地配置中
+
+    然后推送使用命令
+
+        git push -u gitee master
+
+        其中gitee 代表远程仓库的别名 master代表本地分支
