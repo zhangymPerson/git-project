@@ -89,7 +89,7 @@ $ git checkout origin/*/*
 
     git push --mirror 推送所有分支进入到远程仓库  
     
-
+    git push --all origin 推送所有分支到远程仓库
         
 ## 注意
 
