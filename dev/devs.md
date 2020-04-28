@@ -1,0 +1,7 @@
+devs文件是使用 
+
+git checkout dev
+
+git checkout -b devs dev
+
+创建出来的，表示基于dev 创建新的devs分支
