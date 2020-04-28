@@ -84,3 +84,17 @@ $ git checkout origin/*/*
         git push -u gitee master
 
         其中gitee 代表远程仓库的别名 master代表本地分支
+    
+- git 推送所有分支到远程 仓库的方式
+
+    git push --mirror 推送所有分支进入到远程仓库  
+    
+
+        
+## 注意
+
+- 所有分支要并入master上
+
+    github上如果提交的分支中有内容没有在master分支下，则会在主页显示没有合并到master的分支，并推荐你合并到主分支下
+
+    ![](./pic/gitfenzhi.png)
