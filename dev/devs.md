@@ -13,3 +13,10 @@ git checkout dev-1
 git merge devs
 
 后 在 dev-1分支下添加的
+这句话是在执行
+
+git checkout dev-2 
+
+git merge devs
+
+后添加的
