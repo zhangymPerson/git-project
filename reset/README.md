@@ -39,3 +39,9 @@ git reset f06e14553cb0b03a624dc6e8aa18906e0f221296
 
 
 ```
+
+### revert 和 reset 
+
+- revert取消指定commit记录。当次提交内容全部回滚，需要和当前版本的分支进行冲突合并后重新提交
+
+- reset则在移动项目的头指针，如果reset到指定commit记录，则之后的commit记录全部取消，或者变成暂存状态，需要重新commit
