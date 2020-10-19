@@ -4,9 +4,9 @@
 
 **stash 命令可用于临时保存和回复修改，可跨分支。**
 
-- 注：在未 add 之前才能执行 stash！！！！
+- 注：**在 `add` 之后才能执行** `git stash`
 
-  `git stash [save message]`
+  `git stash save [message]` == `git stash` 
 
   保存，save 为可选项，message 为本次保存的注释
   `git stash list`
